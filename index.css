@@ -1,0 +1,75 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(22, 22, 22); */
+    background-color: rgb(96, 96, 96);
+    height:300vh;
+}
+/* #top{
+    height:4.5rem; 
+     background-color:white;
+} */
+/* background-image and div ----------------------------------------------------------------------------*/
+img{
+    height:80vh;
+    width:100vw;
+}
+
+#background-image{
+    background-color:rgb(57, 57, 224);
+    opacity: 0.4;
+    height:80vh;
+    width:100vw;
+    position:absolute;
+}
+
+
+/* navigation bar -------------------------------------------------------------------------------------------- */
+
+ul{
+    z-index:0;
+    /* background-color: aqua; */
+    opacity: 1;
+    /* border:1px solid red; */
+    /* padding:1rem; */
+}
+nav#navigation_bar{
+    height:3.6rem;
+    font-size:24px;
+    background-color: rgb(255, 255, 255);
+    opacity:0.6;
+    position:relative;
+    top:1rem;
+}
+li#navigation_list{
+    position:relative;
+    top:1rem;
+    align-items: center;
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+}
+/* ----------------------------------------------------------------------------------------------- */
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left:10vw;
+}
+.product{
+    margin-right:5rem;
+    margin-top:6rem;
+    height:45vh;
+    width:15vw;
+    /* background-color:rgb(149, 180, 170); */
+    background-image: linear-gradient(to right,rgb(105, 179, 225),rgb(255, 255, 255));
+}
+
+div.product:hover{
+    transform: scale(1.07,1.07);
+    transition:1s;
+    background-image: linear-gradient(to left,rgb(105, 179, 225),rgb(255, 255, 255));
+}
